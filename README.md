@@ -47,4 +47,4 @@ Coming to Google Play and App Stores soon (...I hope so!!!!)
 
 - Any contribution or feedback is deeply appreciated. (I am still learning Flutter)
 - Email: anaya [at] koirala [dot] xyz
-- Website: [https://koirala.xyz](koirala.xyz)
+- Website: <a href="https://koirala.xyz">koirala.xyz</a>
