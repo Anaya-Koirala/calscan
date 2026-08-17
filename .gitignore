@@ -49,3 +49,7 @@ app.*.map.json
 
 # Widget Preview
 .widget_preview/
+
+pubspec.lock
+analysis_options.yaml
+.metadata
