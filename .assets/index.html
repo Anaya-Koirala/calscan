@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CalScan</title>
+<meta name="description" content="CalScan is a privacy-focused cross-platform mobile app that scans event flyers and adds them to your calendar. No internet connection, no server-side processing, no third-party APIs, no LLM integration.">
+<meta name="keywords" content="CalScan, calendar app, event scanner, OCR, flyer scanner, privacy-focused, offline app, Flutter, ICS export">
+<meta name="author" content="Anaya Koirala">
+<link rel="canonical" href="https://calscan.koirala.xyz">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CalScan">
+<meta property="og:description" content="Scan event flyers and add them to your calendar... FAST! A privacy-focused cross-platform mobile app that directly converts images of posters, flyers and announcements into a calendar event.">
+<meta property="og:image" content="icon.png">
+<meta property="og:url" content="https://calscan.koirala.xyz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CalScan">
+<meta name="twitter:description" content="Scan event flyers and add them to your calendar... FAST! A privacy-focused cross-platform mobile app that directly converts images of posters, flyers and announcements into a calendar event.">
+<meta name="twitter:image" content="icon.png">
+</head>
+<body>
+<center>
+<img src="icon.png" alt="CalScan icon" width="240"><br><br>
+<p><a href="https://calscan.koirala.xyz">calscan.koirala.xyz</a></p>
+<p><a href="https://github.com/Anaya-Koirala/calscan">github repo</a></p>
+</center>
+<h2>Scan event flyers and add them to your calendar... FAST!</h2>
+
+<p>
+CalScan is a privacy-focused cross-platform mobile app to directly convert
+images of posters, flyers and announcements into a calendar event.
+</p>
+
+<p>Coming to Google Play and App Stores soon (...I hope so!!!!).</p>
+
+<h2>Downloads</h2>
+
+<p>
+The <code>Universal APK</code> works for all android devices but comes with a larger size. For most modern phone the <code>64-bit ARM APK</code> is the one you need.
+</p>
+
+<p>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-release.apk"><b>Download</b></a> Universal APK (~86.4MB).
+<br>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-release.apk.sha1"><b>Download</b></a> the SHA1 File Checksum
+</p>
+
+<p>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-arm64-v8a-release.apk"><b>Download</b></a> 64-bit ARM APK (Modern Devices APK ~25.6MB).
+<br>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-arm64-v8a-release.apk.sha1"><b>Download</b></a> the SHA1 File Checksum
+</p>
+
+<p>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk"><b>Download</b></a> 32-bit ARM APK (Legacy Devices APK ~32.5MB).
+<br>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk.sha1"><b>Download</b></a> the SHA1 File Checksum
+</p>
+
+<p>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-x86_64-release.apk"><b>Download</b></a> x86_64 APK (Computers and Emulators APK ~32.9MB).
+<br>
+<a href="https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-x86_64-release.apk.sha1"><b>Download</b></a> the SHA1 File Checksum
+</p>
+
+<hr><br>
+
+<h2>Features</h2>
+
+<ul>
+<li><big>Scan from your camera or gallery</big></li>
+<li><big>Crop the flyer before processing</big></li>
+<li><big>Extract key event details with OCR</big></li>
+<li><big>Review and edit the title, location, date, and time before saving</big></li>
+<li><big>Pick a default calendar and reminder settings</big></li>
+<li><big>Add events directly to your device calendar</big></li>
+<li><big>Export the event as an .ics file for sharing or backup</big></li>
+<li><big>No internet connection</big></li>
+<li><big>No server-side processing</big></li>
+<li><big>No third-party API dependency</big></li>
+<li><big>No LLM integration</big></li>
+</ul>
+
+<br><hr><br>
+
+<h2>Screenshots</h2>
+
+<center>
+<p>
+<img src="camera.jpg" alt="CalScan camera screen" width="320">
+<img src="settings.jpg" alt="CalScan settings screen" width="320">
+</p>
+<p>
+<img src="home.jpg" alt="CalScan home screen" width="320">
+<img src="review.jpg" alt="CalScan review screen" width="320">
+</p>
+</center>
+
+<br><hr><br>
+
+<h2>Tech stack</h2>
+
+<ul>
+<li>Flutter: <a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter</a></li>
+<li>Google ML Kit Text Recognition: <a href="https://github.com/flutter-ml/google_ml_kit_flutter">https://github.com/flutter-ml/google_ml_kit_flutter</a></li>
+<li>Image Picker: <a href="https://github.com/flutter/packages/tree/main/packages/image_picker/image_picker">https://github.com/flutter/packages/tree/main/packages/image_picker/image_picker</a></li>
+<li>Image Cropping: <a href="https://github.com/hnvn/flutter_image_cropper">https://github.com/hnvn/flutter_image_cropper</a></li>
+<li>Device Calendar integration: <a href="https://github.com/builttoroam/device_calendar">https://github.com/builttoroam/device_calendar</a></li>
+<li>Share Plus: <a href="https://github.com/fluttercommunity/plus_plugins/tree/main/packages/share_plus/share_plus">https://github.com/fluttercommunity/plus_plugins/tree/main/packages/share_plus/share_plus</a></li>
+<li>Path Provider: <a href="https://github.com/flutter/packages/tree/main/packages/path_provider/path_provider">https://github.com/flutter/packages/tree/main/packages/path_provider/path_provider</a></li>
+<li>Shared Preferences: <a href="https://github.com/flutter/packages/tree/main/packages/shared_preferences/shared_preferences">https://github.com/flutter/packages/tree/main/packages/shared_preferences/shared_preferences</a></li>
+<li>Timezone: <a href="https://github.com/srawlins/timezone">https://github.com/srawlins/timezone</a></li>
+<li>File Picker: <a href="https://github.com/miguelpruivo/flutter_file_picker">https://github.com/miguelpruivo/flutter_file_picker</a></li>
+<li>iCalendar support: <a href="https://github.com/Enough-Software/enough_icalendar">https://github.com/Enough-Software/enough_icalendar</a></li>
+<li>Open File X: <a href="https://github.com/javaherisaber/open_filex">https://github.com/javaherisaber/open_filex</a></li>
+<li>Date/time parsing (Chrono): <a href="https://github.com/g-30/chrono_dart">https://github.com/g-30/chrono_dart</a></li>
+</ul>
+
+<br><hr><br>
+
+<h2>Contribution and Contact</h2>
+
+<ul>
+<li><big>Any contribution or feedback is deeply appreciated. (I am still learning Flutter)</big></li>
+<li><big>Email: anaya [at] koirala [dot] xyz</big></li>
+<li><big>Website: <a href="https://koirala.xyz">koirala.xyz</a></big></li>
+</ul>
+
+<br><hr><br>
+
+<h2>TODO</h2>
+
+<ul>
+<li><big>Improve the OCR and Classification Heuristics</big></li>
+<li><big>Create a comprehensive test suite for all kinds of flyers</big></li>
+<li><big>User opt-in LLM integration for complex flyers (User provides the API Key)</big></li>
+<li><big>Improve overall look and feel, while keeping a minimalist design</big></li>
+</ul>
+
+<br><br>
+
+</body>
+</html>
