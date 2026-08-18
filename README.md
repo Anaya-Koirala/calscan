@@ -1,10 +1,13 @@
-# CalScan
+<img src="icon.png" alt="CalScan review screen" width="240" /><br>
 
 Scan event flyers and add them to your calendar...FAST!
 
 CalScan is a privacy-focused cross-platform mobile app to directly convert images of posters, flyers and announcements into a calendar event.
 
-Coming to Google Play and App Stores soon (...I hope so!!!!)
+Coming to Google Play and App Stores soon (...I hope so!!!!).
+
+- [Download](https://webpage-util.pages.dev/calscan-apk/app-release.apk) the APK  
+- [Download](https://webpage-util.pages.dev/calscan-apk/app-release.apk.sha1) the SHA1 File Checksum 
 
 ## Features
 - Scan from your camera or gallery
