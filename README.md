@@ -22,7 +22,9 @@ The `Universal APK` works for all android devices but comes with a larger size. 
 
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk) 32-bit ARM APK (Legacy Devices APK ~32.5MB).
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk.sha1) the SHA1 File Checksum 
+
 <br>
+
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-x86_64-release.apk) x86_64 APK (Computers and Emulators APK ~32.9MB). 
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-x86_64-release.apk.sha1) the SHA1 File Checksum 
 
