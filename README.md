@@ -11,11 +11,15 @@ Coming to Google Play and App Stores soon (...I hope so!!!!).
 The `Universal APK` works for all android devices but comes with a larger size. For most modern phone the `64-bit ARM APK` is the one you need.
 
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-release.apk) Universal APK (~86.4MB).
-- [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-release.apk.sha1) the SHA1 File Checksum 
+- [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-release.apk.sha1) the SHA1 File Checksum
+  
 <br>
+
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-arm64-v8a-release.apk) 64-bit ARM APK (Modern Devices APK ~25.6MB).
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-arm64-v8a-release.apk.sha1) the SHA1 File Checksum
+  
 <br>
+
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk) 32-bit ARM APK (Legacy Devices APK ~32.5MB).
 - [Download](https://github.com/Anaya-Koirala/calscan/releases/download/Android-APK/app-armeabi-v7a-release.apk.sha1) the SHA1 File Checksum 
 <br>
