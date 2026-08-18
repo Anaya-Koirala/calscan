@@ -348,7 +348,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
       defaultDurationMinutes: defaultDuration,
       reminderMinutes: _reminderMinutes,
     );
-    await Share.shareXFiles([XFile(file.path)]);
+    await SharePlus.instance.share(ShareParams(files: [XFile(file.path)]));
   }
 
   void _showSnack(String msg) {

@@ -12,8 +12,4 @@ class ParsedEvent {
     this.location,
     this.rawText = '',
   });
-
-  bool get titleMissing => title.isEmpty;
-  bool get dateMissing => start == null;
-  bool get locationMissing => location == null || location!.isEmpty;
 }

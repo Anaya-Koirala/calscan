@@ -36,7 +36,7 @@ ParsedEvent parseFlyerText(String rawText, List<TextBlock> blocks) {
 String _guessTitle(List<TextBlock> blocks) {
   TextBlock? tallest;
   for (final b in blocks) {
-    if (_dateRe.hasMatch(b.text) || Chrono.parseDate(b.text) != null) continue;
+    if (_dateRe.hasMatch(b.text) || _monthDateRe.hasMatch(b.text)) continue;
     if (tallest == null || b.boundingBox.height > tallest.boundingBox.height) {
       tallest = b;
     }

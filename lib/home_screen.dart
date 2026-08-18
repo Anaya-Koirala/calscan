@@ -23,10 +23,18 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _busy = false;
 
   Future<void> _scan(ImageSource source) async {
-    final picked = await ImagePicker().pickImage(source: source);
+    final picked = await ImagePicker().pickImage(
+      source: source,
+      maxWidth: 2000,
+      maxHeight: 2000,
+      imageQuality: 85,
+    );
     if (picked == null) return;
 
-    final cropped = await ImageCropper().cropImage(sourcePath: picked.path);
+    final cropped = await ImageCropper().cropImage(
+      sourcePath: picked.path,
+      compressQuality: 85,
+    );
     if (cropped == null) return;
 
     setState(() => _busy = true);
