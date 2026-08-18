@@ -7,14 +7,17 @@ class OcrResult {
 }
 
 class OcrService {
+  // ML Kit recognizer setup is expensive; keep one instance across scans
+  // instead of recreating it per image.
+  final _recognizer = TextRecognizer(script: TextRecognitionScript.latin);
+
   Future<OcrResult> recognizeText(String imagePath) async {
-    final recognizer = TextRecognizer(script: TextRecognitionScript.latin);
-    try {
-      final input = InputImage.fromFilePath(imagePath);
-      final result = await recognizer.processImage(input);
-      return OcrResult(rawText: result.text, blocks: result.blocks);
-    } finally {
-      recognizer.close();
-    }
+    final input = InputImage.fromFilePath(imagePath);
+    final result = await _recognizer.processImage(input);
+    return OcrResult(rawText: result.text, blocks: result.blocks);
+  }
+
+  void dispose() {
+    _recognizer.close();
   }
 }

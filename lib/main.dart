@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:timezone/data/latest.dart' as tzdata;
+import 'package:timezone/data/latest_10y.dart' as tzdata;
 import 'home_screen.dart';
 import 'settings_service.dart';
 

@@ -39,8 +39,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (!mounted) return;
     setState(() {
       _calendars = calendars;
-      _selectedCalendarId =
-          savedId ?? (calendars.isNotEmpty ? calendars.first.id : null);
+      // A saved id may refer to a calendar that no longer exists; falling
+      // back avoids giving the dropdown a value that is not among its items.
+      _selectedCalendarId = calendars.any((c) => c.id == savedId)
+          ? savedId
+          : (calendars.isNotEmpty ? calendars.first.id : null);
       _durationMinutes = duration;
     });
   }

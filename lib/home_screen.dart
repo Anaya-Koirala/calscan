@@ -20,10 +20,19 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final _picker = ImagePicker();
+  final _cropper = ImageCropper();
+  final _ocrService = OcrService();
   bool _busy = false;
 
+  @override
+  void dispose() {
+    _ocrService.dispose();
+    super.dispose();
+  }
+
   Future<void> _scan(ImageSource source) async {
-    final picked = await ImagePicker().pickImage(
+    final picked = await _picker.pickImage(
       source: source,
       maxWidth: 2000,
       maxHeight: 2000,
@@ -31,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
     if (picked == null) return;
 
-    final cropped = await ImageCropper().cropImage(
+    final cropped = await _cropper.cropImage(
       sourcePath: picked.path,
       compressQuality: 85,
     );
@@ -39,11 +48,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
     setState(() => _busy = true);
     try {
-      final ocr = await OcrService().recognizeText(cropped.path);
+      final ocr = await _ocrService.recognizeText(cropped.path);
       final event = parseFlyerText(ocr.rawText, ocr.blocks);
       if (!mounted) return;
       Navigator.push(context,
           MaterialPageRoute(builder: (_) => ReviewScreen(event: event)));
+    } on Exception {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Could not read text from the image')));
+      }
     } finally {
       if (mounted) setState(() => _busy = false);
     }

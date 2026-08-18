@@ -1,3 +1,11 @@
+# ML Kit discovers its internal components (SharedPrefManager, etc.) by
+# reflectively instantiating ComponentRegistrar classes. ML Kit's own consumer
+# rule only keeps the class names; in R8 full mode the no-arg constructors get
+# stripped, so discovery fails silently and text recognition NPEs at runtime.
+-keepclassmembers class * implements com.google.firebase.components.ComponentRegistrar {
+    public <init>();
+}
+
 # ML Kit text recognition ships optional per-script recognizer classes
 # (Chinese/Devanagari/Japanese/Korean) that this app doesn't depend on.
 # R8 can't resolve them, so silence the warnings rather than pulling in

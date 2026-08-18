@@ -217,29 +217,17 @@ class _ReviewScreenState extends State<ReviewScreen> {
     return '$startDate $startTime → $endDate $endTime';
   }
 
-  String _reminderLabel(int minutes) {
-    switch (minutes) {
-      case -1:
-        return 'None';
-      case 0:
-        return 'At time of event';
-      case 5:
-      case 10:
-      case 15:
-      case 30:
-        return '$minutes minutes before';
-      case 60:
-        return '1 hour before';
-      case 120:
-        return '2 hours before';
-      case 1440:
-        return '1 day before';
-      case 10080:
-        return '1 week before';
-      default:
-        return '$minutes minutes before';
-    }
-  }
+  static const _namedReminderLabels = {
+    -1: 'None',
+    0: 'At time of event',
+    60: '1 hour before',
+    120: '2 hours before',
+    1440: '1 day before',
+    10080: '1 week before',
+  };
+
+  String _reminderLabel(int minutes) =>
+      _namedReminderLabels[minutes] ?? '$minutes minutes before';
 
   ParsedEvent _currentEvent() => ParsedEvent(
         title: _title.text,

@@ -1,11 +1,11 @@
 class ParsedEvent {
-  String title;
-  DateTime? start;
-  DateTime? end;
-  String? location;
-  String rawText;
+  final String title;
+  final DateTime? start;
+  final DateTime? end;
+  final String? location;
+  final String rawText;
 
-  ParsedEvent({
+  const ParsedEvent({
     this.title = '',
     this.start,
     this.end,
