@@ -1,4 +1,4 @@
-<img src="icon.png" alt="CalScan review screen" width="240" /><br>
+<img src=".assets/icon.png" alt="CalScan review screen" width="240" /><br>
 [calscan.koirala.xyz](https://calscan.koirala.xyz) 
 
 Scan event flyers and add them to your calendar...FAST!
